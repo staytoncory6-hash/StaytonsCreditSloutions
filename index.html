@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Credit Repair | 5-Star Credit Restoration</title>
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Elite, 5-star credit repair and credit restoration. We handle the disputes, calls, and letters so you can focus on living your life.">
+
+  <style>
+    /* RESET */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #0b63ce;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* LAYOUT */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* TOP BAR / NAV */
+    header {
+      background: #0b63ce;
+      color: #fff;
+      padding: 12px 0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      color: #0b63ce;
+    }
+
+    .brand-text-main {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    .brand-text-sub {
+      font-size: 0.8rem;
+      opacity: 0.9;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0b63ce, #003b80);
+      color: #fff;
+      padding: 60px 20px 50px 20px;
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 30px;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.13);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 0.98rem;
+      margin-bottom: 20px;
+      max-width: 520px;
+    }
+
+    .hero-stars {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+    .stars {
+      color: #ffd54a;
+      font-size: 1.1rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background: #ffd54a;
+      color: #003b80;
+      border-radius: 999px;
+      padding: 10px 22px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.05);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border-radius: 999px;
+      padding: 9px 20px;
+      border: 1px solid rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .hero-box {
+      background: #fff;
+      color: #222;
+      border-radius: 14px;
+      padding: 18px 16px 20px 16px;
+      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    }
+
+    .hero-box-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .hero-list {
+      list-style: none;
+      font-size: 0.86rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+
+    .hero-check {
+      color: #0b63ce;
+      font-weight: bold;
+    }
+
+    .hero-footnote {
+      font-size: 0.7rem;
+      opacity: 0.7;
+      margin-top: 6px;
+    }
+
+    /* GENERAL SECTIONS */
+    section {
+      padding: 40px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      font-size: 0.95rem;
+      max-width: 650px;
+      margin: 0 auto 30px auto;
+      color: #555;
+    }
+
+    /* DENIED SECTION */
+    .denied-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 15px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .denied-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 12px 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+
+    .denied-label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #777;
+      margin-bottom: 4px;
+    }
+
+    /* HOW IT WORKS */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .step-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 18px 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      font-size: 0.9rem;
+    }
+
+    .step-number {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #0b63ce;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    /* REVIEWS */
+    .reviews {
+      background: #ffffff;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .review-card {
+      border-radius: 10px;
+      padding: 16px 14px;
+      background: #f7f9ff;
+      border: 1px solid #e0e5f5;
+      font-size: 0.86rem;
+    }
+
+    .review-stars {
+      color: #ffd54a;
+      margin-bottom: 6px;
+    }
+
+    .review-name {
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 0.85rem;
+    }
+
+    .review-tag {
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    /* PRICING */
+    .pricing {
+      background: #f4f7fb;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .price-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 18px 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      font-size: 0.9rem;
+      border-top: 4px solid #0b63ce;
+    }
+
+    .price-name {
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .price-amount {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 6px 0;
+    }
+
+    .price-note {
+      font-size: 0.8rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .price-list {
+      list-style: none;
+      font-size: 0.82rem;
+      margin-bottom: 8px;
+    }
+
+    .price-list li::before {
+      content: "• ";
+      color: #0b63ce;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .contact-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 18px 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      font-size: 0.9rem;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .contact-row {
+      margin-bottom: 4px;
+    }
+
+    .contact-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #777;
+    }
+
+    .contact-value {
+      font-weight: bold;
+    }
+
+    .mini-form label {
+      display: block;
+      font-size: 0.8rem;
+      margin-bottom: 4px;
+      margin-top: 8px;
+    }
+
+    .mini-form input,
+    .mini-form textarea {
+      width: 100%;
+      padding: 7px 8px;
+      border-radius: 6px;
+      border: 1px solid #d0d5e0;
+      font-family: inherit;
+      font-size: 0.85rem;
+    }
+
+    .mini-form textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .mini-form button {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0b63ce;
+      color: #fff;
+      text-align: center;
+      padding: 12px 10px 14px 10px;
+      font-size: 0.8rem;
+      margin-top: 10px;
+    }
+
+    footer a {
+      color: #ffd54a;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero-inner,
+      .steps,
+      .reviews-grid,
+      .pricing-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-inner {
+        text-align: left;
+      }
+
+      .denied-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        justify-content: flex-start;
+      }
+
+      .denied-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-logo">E</div>
+        <div>
+          <div class="brand-text-main">Elite Credit Repair</div>
+          <div class="brand-text-sub">5-Star Credit Restoration</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#denied">Denied?</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#reviews">5-Star Reviews</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-tag">Elite • Compliant • Transparent</div>
+        <h1>Stop Stressing About Your Credit. Let the 5-Star Experts Handle It.</h1>
+        <p>
+          No more arguing with credit bureaus, collectors, or lenders.  
+          We handle the disputes, deadlines, and documentation — you focus on living your life.
+        </p>
+
+        <div class="hero-stars">
+          <div class="stars">★★★★★</div>
+          <div>5-Star Rated Service • No Gimmicks • No False Promises</div>
+        </div>
+
+        <div class="hero-cta">
+          <button class="btn-primary">Start My Free Credit Review</button>
+          <button class="btn-outline">Have Questions? Let’s Talk</button>
+        </div>
+      </div>
+
+      <div class="hero-box">
+        <div class="hero-box-title">Have you been denied for any of these?</div>
+        <ul class="hero-list">
+          <li><span class="hero-check">✓</span> Auto loan or refinance</li>
+          <li><span class="hero-check">✓</span> Apartment or home rental</li>
+          <li><span class="hero-check">✓</span> Credit cards or personal loans</li>
+          <li><span class="hero-check">✓</span> You’re stuck with high-interest rates</li>
+        </ul>
+        <div style="font-size:0.8rem; font-weight:bold; margin-top:6px;">
+          Imagine getting approved with confidence — not anxiety.
+        </div>
+        <div class="hero-footnote">
+          We do not guarantee specific score changes or approvals.  
+          We provide professional, compliant credit repair, dispute, and coaching services.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DENIED SECTION -->
+  <section id="denied">
+    <div class="container">
+      <h2 class="section-title">Denied? We Turn “No” Into New Opportunities.</h2>
+      <p class="section-subtitle">
+        If you’ve heard “you’re not approved” more times than you can count, you’re not alone.  
+        Our clients come to us frustrated, confused, and exhausted — and we handle the heavy lifting for them.
+      </p>
+
+      <div class="denied-grid">
+        <div class="denied-card">
+          <div class="denied-label">Common Denial</div>
+          Car / Auto Loan
+        </div>
+        <div class="denied-card">
+          <div class="denied-label">Common Denial</div>
+          Apartment / Rental
+        </div>
+        <div class="denied-card">
+          <div class="denied-label">Common Denial</div>
+          Credit Cards
+        </div>
+        <div class="denied-card">
+          <div class="denied-label">Common Denial</div>
+          Personal Loans
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How Elite Credit Repair Works</h2>
+      <p class="section-subtitle">
+        Simple, transparent, and compliant. You provide your information — we do the research, disputes, tracking, and updates for you.
+      </p>
+
+      <div class="steps">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-title">Free Credit Review</div>
+          <p>
+            We review your credit reports and identify negative, inaccurate, outdated, or questionable items that may be hurting your profile.
+          </p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-title">Targeted Dispute Strategy</div>
+          <p>
+            We create custom, compliant dispute letters and responses aimed at the bureaus and creditors — not generic templates.
+          </p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-title">Track Results & Coach You</div>
+          <p>
+            As updates roll in, we coach you on rebuilding, managing utilization, and planning for your next approval goal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2 class="section-title">5-Star Client Experiences</h2>
+      <p class="section-subtitle">
+        These are real results from real people who were tired of being ignored, denied, and stressed about their credit.
+      </p>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “I was denied for an apartment twice. Elite Credit Repair handled everything with the bureaus.  
+            Now I’m approved and moved in. Zero stress.”
+          </p>
+          <div class="review-name">— J. Robinson</div>
+          <div class="review-tag">Apartment Approval</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “They explained every step, no false promises. My credit profile is cleaner and my interest rate dropped on my auto loan.”
+          </p>
+          <div class="review-name">— M. Torres</div>
+          <div class="review-tag">Auto Refi & Cleanup</div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p>
+            “I work a lot and don’t have time to argue with collectors. Elite took that off my plate and kept me updated the whole way.”
+          </p>
+          <div class="review-name">— D. Ellis</div>
+          <div class="review-tag">Busy Professional</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Straightforward, No-Games Pricing</h2>
+      <p class="section-subtitle">
+        No hidden nonsense. No “mystery” fees. Just clear credit repair packages designed to match where you’re starting from.
+        (Sample pricing — customize these numbers to your business.)
+      </p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-name">Starter Cleanup</div>
+          <div class="price-amount">$99</div>
+          <div class="price-note">One-time setup</div>
+          <ul class="price-list">
+            <li>Full credit review & recommendations</li>
+            <li>Targeted disputes to major bureaus</li>
+            <li>Basic rebuild roadmap</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <div class="price-name">Elite Monthly</div>
+          <div class="price-amount">$129/mo</div>
+          <div class="price-note">Most Popular</div>
+          <ul class="price-list">
+            <li>Ongoing disputes & follow-ups</li>
+            <li>Score tracking & strategy calls</li>
+            <li>Utilization & rebuild coaching</li>
+          </ul>
+        </div>
+
+        <div class="price-card">
+          <div class="price-name">VIP Approval Prep</div>
+          <div class="price-amount">$199/mo</div>
+          <div class="price-note">For big goals</div>
+          <ul class="price-list">
+            <li>Custom plan for home / auto / business goals</li>
+            <li>Priority updates and support</li>
+            <li>Pre-approval guidance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Ready to Talk About Your Credit?</h2>
+      <p class="section-subtitle">
+        Tell us where you are and what you’re trying to do — new car, new apartment, home purchase, business funding — and we’ll help you build a plan.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Contact Details</h3>
+          <div class="contact-row">
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">(555) 555-5555</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">support@elitecreditrepair.com</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">Service Area</div>
+            <div class="contact-value">Nationwide (Remote)</div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-label">Hours</div>
+            <div class="contact-value">Mon–Fri • 9:00 AM – 6:00 PM</div>
+          </div>
+          <p style="font-size:0.8rem; margin-top:10px; color:#555;">
+            We are a professional credit repair service.  
+            We do not guarantee specific credit scores, approvals, or outcomes.  
+            We focus on compliant disputes, education, and strategic planning.
+          </p>
+        </div>
+
+        <div class="contact-card mini-form">
+          <h3>Quick Message</h3>
+          <p style="font-size:0.84rem; margin-bottom:6px;">
+            This form is for demo purposes. Connect it to your email or CRM later.
+          </p>
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your full name" />
+
+          <label for="goal">Main Goal</label>
+          <input id="goal" type="text" placeholder="Buy a home, new car, approvals, etc." />
+
+          <label for="message">What’s hurting your credit right now?</label>
+          <textarea id="message" placeholder="Late payments, collections, charge-offs, high utilization, etc."></textarea>
+
+          <button class="btn-primary">Submit (Demo)</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> Elite Credit Repair. All rights reserved.  
+    This site is for informational purposes only and does not guarantee credit outcomes.
+  </footer>
+
+  <script>
+    // Set current year in footer automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
