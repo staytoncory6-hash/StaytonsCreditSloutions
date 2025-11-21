@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Credit Repair | AI-Powered Credit Restoration</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+  <script>
+    (function(){
+        emailjs.init("YOUR_PUBLIC_KEY_HERE");
+    })();
+  </script>
+</head>
+
+<body>
+
+<header class="header">
+  <img src="assets/logo.png" class="logo" alt="Elite Credit Logo">
+  <h1>Elite Credit Repair AI</h1>
+  <p class="tagline">Texas Law • FCRA • CROA • AI-Driven Strategy</p>
+</header>
+
+<section class="ai-intro">
+  <h2>Welcome to Your AI Credit Specialist</h2>
+  <p>This AI understands Texas credit law, calculates pricing automatically,
+     builds dispute strategies, and prepares daily email reports.</p>
+</section>
+
+<section id="intake-section">
+  <h2>AI Smart Intake Form</h2>
+
+  <form id="credit-form">
+    <label>Your Current Score</label>
+    <input type="number" id="score">
+
+    <label>Collections (comma separated)</label>
+    <input type="text" id="collections">
+
+    <label>Late Payments</label>
+    <input type="number" id="lates">
+
+    <label>Your Goal</label>
+    <input type="text" id="goal">
+
+    <button type="button" id="analyze">Analyze My Credit</button>
+  </form>
+
+  <pre id="ai-output"></pre>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
