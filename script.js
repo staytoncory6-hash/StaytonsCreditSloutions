@@ -32,3 +32,52 @@ document.addEventListener("DOMContentLoaded", function () {
     updateScoreLabel(e.target.value);
   });
 });
+body {
+  background: #0d1931;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 30px;
+  background: #12203f;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+section {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  background: #ffcc00;
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
